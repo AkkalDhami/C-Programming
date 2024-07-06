@@ -20,8 +20,6 @@ int main()
     }
     printf("\nsum of the series = %d \n", sum);
     // printf("factorial = %d ", factorial);
-    // printf("The Codes Executed By Akkal Dhami \n\n");
-    printf("The Codes Executed By Rajan Chhatyal \n\n");
 
     return 0;
 }
