@@ -15,7 +15,5 @@ int main()
     {
         printf("Day %d: %s\n", i + 1, days[i]);
     }
-    // printf("The Codes Executed By Akkal Dhami \n\n");
-    printf("The Codes Executed By Rajan Chhatyal \n\n");
     return 0;
 }
