@@ -1,3 +1,4 @@
+// A palindrome number is a number that reads the same forward and backward. Eg: 121, 1234321, 234567898765432..
 #include <stdio.h>
 
 int main()
