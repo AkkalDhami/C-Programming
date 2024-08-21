@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-int findEvenOrOdd();
-int findEvenOrOdd()
+int findEvenOrOdd(); // function declaration
+int findEvenOrOdd()// function definition
 {
     int num;
     printf("\nEnter a number: ");
@@ -16,6 +16,6 @@ int findEvenOrOdd()
 
 int main()
 {
-    findEvenOrOdd();
+    findEvenOrOdd(); // function calling
     return 0;
 }
