@@ -1,21 +1,21 @@
 #include <stdio.h>
 
-int simpleInterest(int p, int t, int r);
+float simpleInterest(float p, float t, float r);
 
-int simpleInterest(int p, int t, int r){
+float simpleInterest(float p, float t, float r){
     return (p * t * r) / 100;
 }
 
 int main()
 {
-    int principal, time, rate;
-    printf("Enter the principal amount: ");
-    scanf("%d", &principal);
+    float principal, time, rate;
+    printf("\nEnter the principal amount: ");
+    scanf("%f", &principal);
     printf("Enter the time period: ");
-    scanf("%d", &time);
+    scanf("%f", &time);
     printf("Enter the rate of interest: ");
-    scanf("%d", &rate);
-    printf("Simple Interest: %d", simpleInterest(principal, time, rate));
+    scanf("%f", &rate);
+    printf("Simple Interest: %.2f\n", simpleInterest(principal, time, rate));
 
     return 0;
 }             
