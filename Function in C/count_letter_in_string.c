@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <string.h>
 
-int countLeter(char str[], int count, char c)
+int countLeter(char str[], char c)
 {
 
-    count = 0;
+   int count = 0;
     for (int i = 0; i < strlen(str); i++)
     {
         if (str[i] == c)
@@ -16,8 +16,6 @@ int countLeter(char str[], int count, char c)
 }
 int main()
 {
-
-    int count = 0;
     char str[50];
     char letter;
     printf("Enter a string: ");
@@ -25,7 +23,7 @@ int main()
     printf("Enter a Letter: ");
     scanf("%c", &letter);
 
-    printf("The Given String Contains %d %c ", countLeter(str, count, letter), letter);
+    printf("The Given String Contains %d %c ", countLeter(str, letter), letter);
 
     return 0;
 }
