@@ -1,3 +1,4 @@
+// To find the length of the string using userDefinrd function.
 #include <stdio.h>
 
 int stringLength(char str[])
@@ -9,7 +10,9 @@ int stringLength(char str[])
     // {
     //     len++;
     // }
-
+    
+   // OR,
+    
     //! using for loop
     for (int i = 0; str[i] != '\0'; i++)
     {
@@ -22,8 +25,8 @@ int main()
 {
     char str[100];
     printf("Enter a string: ");
-    // gets(str);
-    fgets(str, 100, stdin);
+    // gets(str); 
+    fgets(str, 100, stdin); // same as  gets(str)
     int len = stringLength(str);
 
     printf("The length of the string is: %d\n", len);
