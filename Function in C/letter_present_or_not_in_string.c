@@ -3,25 +3,15 @@
 
 void containsLetter(char str[], char c)
 {
-    int found = 0;
-
     for (int i = 0; i < strlen(str); i++)
     {
         if (str[i] == c)
         {
-            found = 1;
-            break;
+            printf("Yes, The given string contains '%c'.\n", c);
+            return;
         }
     }
-
-    if (found)
-    {
-        printf("Yes, The given string contains '%c'.\n", c);
-    }
-    else
-    {
-        printf("No, The given string doesn't contain '%c'.\n", c);
-    }
+    printf("No, The given string doesn't contain '%c'.\n", c);
 }
 
 int main()
