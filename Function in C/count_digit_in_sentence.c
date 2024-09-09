@@ -21,6 +21,7 @@ void findDigit(char str[])
         printf("No digits found in the string.\n");
     }
     printf("\nNumber of digits: %d\n", digit);
+    printf("\nSum of digits: %d\n", count);
 }
 int main()
 
