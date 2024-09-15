@@ -3,7 +3,7 @@
 
 float findVolume(float R, float r, float h)
 {
-    return (3.14 * h * (pow(R, 2) - pow(r, 2)));
+    return (4 / 3 * 3.14 * (pow(R, 3) - pow(r, 3)));
 }
 int main()
 {
