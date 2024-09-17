@@ -1,4 +1,4 @@
-//WAp in C  that uses a structure to display the names and marks of 20 students and sorts them in descending order based on their marks:
+//WAP in C that uses a structure to display the names and marks of 20 students and sorts them in descending order based on their marks:
 
 #include <stdio.h>
 struct student
