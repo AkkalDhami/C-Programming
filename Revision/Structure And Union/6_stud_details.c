@@ -32,9 +32,7 @@ int main()
             s[i].total += s[i].marks[j];
         }
     }
-
-    percent.total = 0;
-
+    
     for (i = 0; i < n; i++)
     {
         printf("Student %d Details: ", i + 1);
