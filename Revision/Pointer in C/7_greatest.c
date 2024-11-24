@@ -1,17 +1,16 @@
 #include <stdio.h>
 
-int findGreatest(int arr[10], int *ptr, int x)
+int findGreatest(int *ptr)
 {
-    x = arr[0];
-    ptr = &x;
+    int large = 0;
     for (int i = 0; i < 10; i++)
     {
-        if (arr[i] > x)
+        if (*(ptr + i) > large)
         {
-            x = arr[i];
+            large = *(ptr + i);
         }
     }
-    printf("Largest number is: %d\n", *ptr);
+    printf("Large number: %d\n", large);
 }
 int main()
 {
@@ -21,7 +20,7 @@ int main()
         printf("Enter num-%d: ", i + 1);
         scanf("%d", &arr[i]);
     }
-    findGreatest(arr, &x, x);
+    findGreatest(arr);
     printf("\nProgram Executed By Akkal Dhami</>\n\n");
 
     return 0;
