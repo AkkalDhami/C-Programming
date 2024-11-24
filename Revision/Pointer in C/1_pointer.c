@@ -9,11 +9,10 @@ int main()
     int *ptr = &x;
     printf("Value of x: %d\n", x);
     printf("Value of x: %d\n", *ptr);
-    printf("Value of ptr: %d\n", *ptr);
+    printf("Value of x: %d\n", *(&x);
 
     printf("\nAddress of x: %u\n", &x);
     printf("Address of x: %u\n", ptr);
-    printf("Address of ptr: %u\n", &ptr);
 
     return 0;
 }
