@@ -1,24 +1,24 @@
 #include <stdio.h>
 
-int findSum(int arr[10], int *ptr, int x)
+int findSum(int *ptr)
 {
-    x = 0;
-    ptr = &x;
+    int sum = 0;
     for (int i = 0; i < 10; i++)
     {
-        *ptr += arr[i];
+        sum += *(ptr + i);
     }
-    printf("Largest number is: %d\n", *ptr);
+    printf("Sum of number: %d\n", sum);
 }
 int main()
 {
     int arr[10], x;
+    printf("Enter 10 Numbers:\n");
     for (int i = 0; i < 10; i++)
     {
         printf("Enter num-%d: ", i + 1);
         scanf("%d", &arr[i]);
     }
-    findSum(arr, &x, x);
+    findSum(arr);
     printf("\nProgram Executed By Akkal Dhami</>\n\n");
 
     return 0;
