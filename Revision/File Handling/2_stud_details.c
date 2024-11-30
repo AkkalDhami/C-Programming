@@ -4,7 +4,6 @@ int main()
 {
     FILE *fptr;
 
-    // Open file in write mode
     fptr = fopen("student.txt", "w");
 
     int rollno, marks1, marks2, marks3;
@@ -12,6 +11,7 @@ int main()
 
     for (int i = 0; i < 5; i++)
     {
+        printf("\nEnter Student-%d Details\n", i+1);
         printf("Enter roll no: ");
         scanf("%d", &rollno);
         printf("Enter your name: ");
