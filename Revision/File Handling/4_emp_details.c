@@ -26,7 +26,7 @@ int main()
     for (int i = 0; i < n; i++)
     {
         printf("\nEnter Employee-%d Details\n", i + 1);
-        printf("\nEnter employee id: ");
+        printf("Enter employee id: ");
         scanf("%d", &e[i].id);
         printf("Enter employee name: ");
         scanf("%s", e[i].name);
@@ -35,7 +35,7 @@ int main()
         printf("Enter employee salary: ");
         scanf("%f", &e[i].salary);
 
-        fprintf(file, "Employee ID: %d\nEmployee Name: %s\nEmployee Age: %d\nEmployee Salary: %.2f\n", e[i].id, e[i].name, e[i].age, e[i].salary);
+        fprintf(file, "%d %s %d %.2f\n", e[i].id, e[i].name, e[i].age, e[i].salary);
     }
     fclose(file);
 
@@ -48,14 +48,13 @@ int main()
 
     printf("\n\nEmployee Details with age greater than 35:\n");
 
-    for (int i = 0; i < n; i++)
+    while (fscanf(file, "%d %s %d %f", &e[0].id, e[0].name, &e[0].age, &e[0].salary) != EOF)
     {
-        fscanf(file, "%d %s %d %f", &e[i].id, e[i].name, &e[i].age, &e[i].salary);
-        if (e[i].age > 35)
+        if (e[0].age > 35)
         {
             found = 1;
             printf("Employee ID: %d\nEmployee Name: %s\nEmployee Age: %d\nEmployee Salary: %.2f\n\n",
-                   e[i].id, e[i].name, e[i].age, e[i].salary);
+                   e[0].id, e[0].name, e[0].age, e[0].salary);
         }
     }
 
