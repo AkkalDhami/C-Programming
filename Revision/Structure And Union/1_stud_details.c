@@ -33,7 +33,7 @@ int main()
         printf("\n***Details Of the Student-%d***\n", i + 1);
         printf("\nRoll : %d\n", s[i].roll);
         printf("Name : %s\n", s[i].name);
-        printf("Grade : %.2f\n", s[i].marks);
+        printf("Total Marks : %.2f\n", s[i].marks);
     }
 
     printf("\nProgram Executed By Akkal Dhami..\n\n");
