@@ -11,7 +11,7 @@ int findSum(int *ptr)
 }
 int main()
 {
-    int arr[10], x;
+    int arr[10];
     printf("Enter 10 Numbers:\n");
     for (int i = 0; i < 10; i++)
     {
