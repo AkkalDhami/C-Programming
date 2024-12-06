@@ -14,7 +14,6 @@ int main()
     printf("Enter the number of students: ");
     scanf("%d", &n);
     struct Student s[n];
-    struct Student percent;
     int i, j;
 
     for (i = 0; i < n; i++)
@@ -44,7 +43,7 @@ int main()
             printf("Subject %d: %.2f\n", j + 1, s[i].marks[j]);
         }
         printf("Total Marks: %.2f\n", s[i].total);
-        printf("Percentage: %.2f\n%", (s[i].total / 300.0 * 100.0));
+        printf("Percentage: %.2f\n", (s[i].total / 300.0 * 100.0));
     }
     printf("\nProgram Executed By Akkal Dhami..\n\n");
 
