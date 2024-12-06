@@ -14,7 +14,7 @@ int findGreatest(int *ptr)
 }
 int main()
 {
-    int arr[10], x;
+    int arr[10];
     for (int i = 0; i < 10; i++)
     {
         printf("Enter num-%d: ", i + 1);
