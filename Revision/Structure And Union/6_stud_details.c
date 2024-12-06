@@ -38,7 +38,7 @@ int main()
         printf("Student %d Details: ", i + 1);
         printf("\nStudent ID-%d: %d\n", i + 1, s[i].id);
         printf("Student Name-%d: %s\n", i + 1, s[i].name);
-        printf("Marks in 5 subjects out of 100: \n");
+        printf("Marks in 3 subjects out of 100: \n");
         for (j = 0; j < 3; j++)
         {
             printf("Subject %d: %.2f\n", j + 1, s[i].marks[j]);
