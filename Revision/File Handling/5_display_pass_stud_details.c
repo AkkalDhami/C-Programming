@@ -15,11 +15,11 @@ int main()
         scanf("%d", &rollno);
         printf("Enter your name: ");
         scanf("%s", name);
-        printf("Enter marks 1: ");
+        printf("Enter Subject1 Marks: ");
         scanf("%d", &marks1);
-        printf("Enter marks 2: ");
+        printf("Enter Subject2 Marks: ");
         scanf("%d", &marks2);
-        printf("Enter marks 3: ");
+        printf("Enter Subject3 Marks: ");
         scanf("%d", &marks3);
 
         fprintf(fptr, "%d %s %d %d %d\n", rollno, name, marks1, marks2, marks3);
