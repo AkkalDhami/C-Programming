@@ -7,7 +7,7 @@ float findVolume(float R, float r)
 }
 int main()
 {
-    float R, r, h;
+    float R, r;
     printf("Enter ther value of R: ");
     scanf("%f", &R);
     printf("Enter ther value of r: ");
