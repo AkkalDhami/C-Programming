@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-float findVolume(float R, float r, float h)
+float findVolume(float R, float r)
 {
     return (4 / 3 * 3.14 * (pow(R, 3) - pow(r, 3)));
 }
@@ -12,10 +12,7 @@ int main()
     scanf("%f", &R);
     printf("Enter ther value of r: ");
     scanf("%f", &r);
-    printf("Enter ther value of h: ");
-    scanf("%f", &h);
-
-    printf("Volume of Hollow Sphere : %.2f", findVolume(R, r, h));
-
+    
+    printf("Volume of Hollow Sphere : %.2f", findVolume(R, r));
     return 0;
 }
