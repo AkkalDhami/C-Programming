@@ -12,7 +12,6 @@ void fibonacci(int n)
         a = b;
         b = c;
     }
-    printf("\n"); 
 }
 
 int main()
