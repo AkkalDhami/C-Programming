@@ -23,5 +23,6 @@ int main()
     } while (n < 0);
 
     fibonacci(n, a, b);
+    
     return 0;
 }
