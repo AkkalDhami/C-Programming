@@ -1,3 +1,5 @@
+//? WAP to solve quadratic equations using function.
+
 #include <stdio.h>
 #include <math.h>
 
@@ -20,8 +22,15 @@ int main()
 {
     float a, b, c;
 
-    printf("Enter the coefficients of the quadratic equation (a, b, c): \n");
-    scanf("%f %f %f", &a, &b, &c);
+    printf("Enter the coefficent a: ");
+    scanf("%f", &a);
+
+    printf("Enter the coefficent b: ");
+    scanf("%f", &b);
+
+    printf("Enter the coefficent c: ");
+    scanf("%f", &c);
+
     solveQuadraticEqn(a, b, c);
 
     return 0;
