@@ -21,9 +21,12 @@ void solveQuadraticEqn(float a, float b, float c)
 int main()
 {
     float a, b, c;
-
-    printf("Enter the coefficent a: ");
-    scanf("%f", &a);
+    
+    do
+    {
+        printf("Enter the coefficent a: ");
+        scanf("%f", &a);
+    } while (a == 0);
 
     printf("Enter the coefficent b: ");
     scanf("%f", &b);
