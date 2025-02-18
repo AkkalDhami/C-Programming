@@ -24,6 +24,8 @@ int main()
 
     struct customer c[n];
 
+    int found = 0;
+
     for (int i = 0; i < n; i++)
     {
         printf("Enter the details of customer-%d\n", i + 1);
@@ -45,6 +47,7 @@ int main()
     }
 
     printf("\nCustomers with balance greater than 5000:\n");
+
     while (fscanf(fptr, "%d %s %f", &c[0].acc_no, c[0].name, &c[0].balance) != EOF)
     {
         if (c[0].balance > 5000)
@@ -53,7 +56,13 @@ int main()
             printf("Name: %s\n", c[0].name);
             printf("Balance: %.2f\n", c[0].balance);
             printf("\n");
+            found = 1;
         }
+    }
+
+    if (!found)
+    {
+        printf("No customer found with balance greater than 5000.\n");
     }
 
     return 0;
