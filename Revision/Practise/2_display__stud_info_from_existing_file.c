@@ -12,7 +12,7 @@ struct students
 int main()
 {
 
-    struct students s[3];
+    struct students s;
     FILE *fptr;
     fptr = fopen("std.dat", "r");
     if (fptr == NULL)
@@ -21,9 +21,9 @@ int main()
         return 1;
     }
 
-    while (fscanf(fptr, "%s %d %f\n", s[0].name, &s[0].roll, &s[0].GPA) != EOF)
+    while (fscanf(fptr, "%s %d %f\n", s.name, &s.roll, &s.GPA) != EOF)
     {
-        printf("\n\nName: %s\nRoll No: %d\nGPA: %.2f\n", s[0].name, s[0].roll, s[0].GPA);
+        printf("\n\nName: %s\nRoll No: %d\nGPA: %.2f\n", s.name, s.roll, s.GPA);
     }
     fclose(fptr);
     printf("Display Students Data Successfully!!\n");
