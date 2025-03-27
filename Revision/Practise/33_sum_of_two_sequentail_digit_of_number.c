@@ -1,5 +1,4 @@
-//? WAP to find the sum of the two sequential digits of a number.
-//? WAP to find the sum of the two sequentail digits of a number. 
+//? WAP to find the sum of the two sequential digits of a number. 
 //? [Hint: If the number is: 1234, the output should be: sum of digits=12+34=46]
 
 #include <stdio.h>
