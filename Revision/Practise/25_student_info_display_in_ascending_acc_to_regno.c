@@ -41,7 +41,7 @@ int main()
         }
     }
 
-    printf("\nStudents Data in accending order(By Registration No):\n");
+    printf("\nStudents Data in ascending order(By Registration No):\n");
 
     for (int i = 0; i < n; i++)
     {
